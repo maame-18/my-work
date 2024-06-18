@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: darkgoldenrod;
+    background: #000;
+    height: 45px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 10px;
+}
+nav a{
+    color: darkgoldenrod;
+}
+nav a:hover{
+    color: rebeccapurple;
+}
+.icon-header div{
+    color:white;
+    margin-left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#menu-bar{
+    display: none;
+}
+@media (maxwidth:767px){
+    #menu-bar{
+        display: initial;
+    }
+}
+ 
+.content{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.sub{
+    background: url(pics/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: blur(0);
+    background-position: center;
+    animation-name: change;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 10s; 
+   
+    
+}
+@keyframes change{
+    0%{
+        background: url(pics/wallpaperflare.com_wallpaper\ \(1\).jpg);
+        background-size: cover;
+    }
+    70%{
+        background: url(pics/wallpaperflare.com_wallpaper\ \(2\).jpg);
+        background-size: cover;
+    }
+    100%{
+        background: url(pics/wallpaperflare.com_wallpaper\ \(7\).jpg);
+        background-size: cover;
+    }
+}
+.pp{
+    font-size: 60px;
+    position: relative;
+    left: 50px;
+    top: 200px;
+    color:rgb(235, 235, 225);
+}
+.sp{
+color: #140101;
+}
+.btn{
+    display: flex;
+   position: relative;
+   bottom: 430px;
+ left: 575px;
+    gap: 5px;
+}
+.first-btn , .second-btn {
+    width: 120px;
+    text-align: center;
+    height: 45px;
+    /* padding: 8px 8px 20px; */
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    border: none
+    
+}
+.btn a{
+    margin-top: 30px;
+}
+
+.main-txt{
+    min-height: 80vh;
+   background-color: rgb(255, 255, 255);
+   overflow: hidden;
+}
+.h1{
+    text-align: center;
+}
+.inner-txt{
+    flex: 1 1 45px ;
+}
+.txt p{
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    position: relative;
+    top: 370px;
+    gap: 20px;
+}
+.inner-txt1{
+position: relative;
+left: 650px;
+margin: 30px;
+}
+.project{
+    min-height: 100vh;
+   /* margin: 10px; */
+   background: #000;
+}
+.flex-container{
+    height: 320px;
+    width: 320px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 130px;
+}
+.pro-txt{
+    color: #fff;
+}
+.d1, .d3{
+    position:relative;
+    top: 255px;
+}
+.d2{
+    position: relative;
+    top: 215px;
+}
+.h1{
+    position: relative;
+    top: 45px;   
+    color: darkgoldenrod;
+}
+p{
+    font-size: 15px;
+    position: relative;
+    top: 115px;   
+    text-align: center;
+}
+/* .lastpart{
+    min-height: 70vh;
+    background: #000;
+   font-size: 30px;
+} */
+.inner-lastpart{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 20px;
+ position: relative;
+ top: 200px;
+ color: white;
+ /* border-radius: 5px; */
+ /* box-shadow: 0px 4px 8px rgba(241, 230, 230, 0.4); */
+ cursor: pointer;
+ 
+}
